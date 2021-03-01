@@ -28,6 +28,8 @@ dependencies:
   audioplayers: ^0.17.3
   bloc: ^6.1.1
   flutter_bloc: ^6.1.2
+  provider: ^4.3.3
+  flutter_file_dialog: ^1.0.0
 
 
 
