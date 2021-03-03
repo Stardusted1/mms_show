@@ -18,14 +18,9 @@ class ImageCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Center(
-            child: Text(
-          this.title,
-          style: Theme.of(context).textTheme.headline6,
-        )),
-        Padding(
-          padding: const EdgeInsets.all(4.0),
-          child: SelectableText(this.url),
+        TitleDesc(
+          title: this.title,
+          desc: this.url,
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
@@ -55,14 +50,9 @@ class AssetsImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Center(
-            child: Text(
-          this.title,
-          style: Theme.of(context).textTheme.headline6,
-        )),
-        Padding(
-          padding: const EdgeInsets.all(4.0),
-          child: SelectableText(this.url),
+        TitleDesc(
+          title: this.title,
+          desc: this.url,
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
@@ -85,14 +75,9 @@ class _LocalDriveImageState extends State<LocalDriveImage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Center(
-            child: Text(
-          "Image from local drive",
-          style: Theme.of(context).textTheme.headline6,
-        )),
-        Padding(
-          padding: const EdgeInsets.all(4.0),
-          child: SelectableText(this._url),
+        TitleDesc(
+          title: "Image from local drive",
+          desc: this._url,
         ),
         CupertinoButton.filled(
             child: Icon(Icons.upload_file),

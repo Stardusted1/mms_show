@@ -15,3 +15,29 @@ class PageDivider extends StatelessWidget {
     );
   }
 }
+
+class TitleDesc extends StatelessWidget {
+  final desc;
+  final title;
+
+  const TitleDesc({Key key, this.desc, this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Center(
+          child: Text(
+            title,
+            style: Theme.of(context).textTheme.headline6,
+          ),
+        ),
+        if (desc != null)
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: SelectableText(desc),
+          ),
+      ],
+    );
+  }
+}

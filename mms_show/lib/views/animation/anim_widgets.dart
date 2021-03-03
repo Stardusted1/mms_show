@@ -8,15 +8,9 @@ class NetworkLottie extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Center(
-          child: Text(
-            "Network Lottie animation",
-            style: Theme.of(context).textTheme.headline6,
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-          child: SelectableText(_url),
+        TitleDesc(
+          title: "Network Lottie animation",
+          desc: _url,
         ),
         Lottie.network(
           _url,
@@ -34,15 +28,9 @@ class AnimatedText extends StatelessWidget {
       height: 200,
       child: Column(
         children: [
-          Center(
-            child: Text(
-              "Animated text widget",
-              style: Theme.of(context).textTheme.headline6,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            child: SelectableText("using animated_text_kit plugin"),
+          TitleDesc(
+            title: "Animated text widget",
+            desc: "using animated_text_kit plugin",
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -112,15 +100,9 @@ class _AnimatedWidgState extends State<AnimatedWidg> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Center(
-          child: Text(
-            "AnimatedContainer widget",
-            style: Theme.of(context).textTheme.headline6,
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-          child: SelectableText("using flutter AnimatedContainer"),
+        TitleDesc(
+          title: "AnimatedContainer widget",
+          desc: "using flutter AnimatedContainer",
         ),
         AnimatedContainer(
           height: data.height,
