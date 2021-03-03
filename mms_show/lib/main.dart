@@ -24,7 +24,8 @@ class MyApp extends StatelessWidget {
       ],
       title: 'Flutter Demo',
       theme: CupertinoThemeData(
-          primaryColor: Colors.black, scaffoldBackgroundColor: Colors.white),
+          primaryColor: Colors.grey[600],
+          scaffoldBackgroundColor: Colors.white),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
