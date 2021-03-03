@@ -2,7 +2,7 @@ library video_lib;
 
 import 'package:flutter/cupertino.dart';
 
-part 'video/widgets.dart';
+part 'video/vid_widgets.dart';
 
 class VideoView extends StatelessWidget {
   @override

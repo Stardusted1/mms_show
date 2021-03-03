@@ -1,15 +1,27 @@
 library animation_lib;
 
-import 'package:flutter/cupertino.dart';
+import 'dart:async';
+import 'dart:math';
 
-part 'animation/widgets.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
+import 'package:mms_show/views/utils.dart';
+
+part 'animation/anim_widgets.dart';
 
 class AnimationView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text("AnimationView"),
+        NetworkLottie(),
+        PageDivider(),
+        AnimatedText(),
+        PageDivider(),
+        AnimatedWidg(),
+        PageDivider()
       ],
     );
   }

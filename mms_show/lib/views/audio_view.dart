@@ -7,7 +7,7 @@ import 'package:flutter_file_dialog/flutter_file_dialog.dart';
 
 import 'utils.dart';
 
-part 'audio/widgets.dart';
+part 'audio/audio_widgets.dart';
 
 class AudioView extends StatelessWidget {
   @override

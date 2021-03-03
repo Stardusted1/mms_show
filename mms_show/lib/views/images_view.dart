@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_file_dialog/flutter_file_dialog.dart';
 import 'package:mms_show/views/utils.dart';
 
-part 'images/widgets.dart';
+part 'images/img_widgets.dart';
 
 class ImagesView extends StatelessWidget {
   @override
